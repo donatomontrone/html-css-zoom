@@ -15,7 +15,12 @@ header {
     background-color: #222222;
     position: fixed;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
+}
+
+span {
+    font-size: .8rem;
+    font-weight: 400;
 }
 .flex {
     display: flex;
@@ -23,36 +28,81 @@ header {
     flex-wrap: wrap;
 }
 
-main.container {
-    height: 70vh;
-    width: 90vw;
-    margin: 10vh auto;
-}
-
 .position {
     position: absolute;
 }
 
-.card {
-    display: inline-block;
-    width: calc(100% / 7);
-    height: calc(70vh / 5);
-    background-color: lightskyblue;
-    border: 3px red solid;
+.buttons{
+    top: 2%;
+    right: 0;
+
+}
+main.container {
+    height: 78vh;
+    width: 90%;
+    margin: 10vh auto 5vh auto;
 }
 
+.speaker-view,
+.full-screen,
+.mute-mic{
+    font-size: .8rem;
+    color: white;
+    padding: .3rem;
+}
+.speaker-view,
+.full-screen {
+    background-color: #222222;
+    border-radius: .4rem;
+    border: none;
+}
+
+.mute-mic{
+    background-color:  rgba(34, 34, 34, .5);
+    top: 80%;
+    left: 1%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    padding: .4rem .2rem;
+}
+
+.card {
+    position: relative;
+    width: calc(100% / 7);
+    height: calc(80vh / 5);
+}
 .header-nav {
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 section.mic-video ul,
 section.interactions ul {
     list-style-type: none;
-    color:whitesmoke
+    color:white;
+    height: 100%;
+}
+
+span {
+    display: block;
+    margin: 0 1rem;
+}
+
+ul li .fa-solid{
+    font-size: 1.3rem;
+    margin-bottom: .2rem;
 }
 
 section.mic-video ul li,
 section.interactions ul li {
     display: inline-block;
+    text-align: center;
+}
+
+.color-green {
+    color:green;
 }
