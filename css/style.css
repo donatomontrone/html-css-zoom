@@ -15,13 +15,17 @@ header {
     background-color: #222222;
     position: fixed;
     width: 100vw;
-    height: 7vh;
+    height: 70px;
 }
 
 span {
     font-size: .8rem;
     font-weight: 400;
+    display: block;
+    margin: 0 1rem;
 }
+
+
 .flex {
     display: flex;
     justify-content: center;
@@ -63,6 +67,14 @@ main.container {
     left: 1%;
 }
 
+.fa-microphone-slash,
+.end-meeting{
+    color: red;
+}
+
+.card:hover .fa-microphone-slash {
+    display: none;
+}
 .card img {
     width: 100%;
     height: 100%;
@@ -74,6 +86,7 @@ main.container {
     width: 200px;
     height: 140px;
 }
+
 .header-nav {
     justify-content: space-between;
     align-items: center;
@@ -85,11 +98,6 @@ section.interactions ul {
     list-style-type: none;
     color:white;
     height: 100%;
-}
-
-span {
-    display: block;
-    margin: 0 1rem;
 }
 
 ul li .fa-solid{
@@ -105,4 +113,18 @@ section.interactions ul li {
 
 .color-green {
     color:green;
+}
+
+.close{
+
+    padding: 0 .6rem;
+    line-height: 4rem;
+}
+
+.end-meeting{
+    padding: .5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: .5rem;
 }
