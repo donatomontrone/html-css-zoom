@@ -1,0 +1,58 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #222222;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main.container {
+    height: 70vh;
+    width: 90vw;
+    margin: 10vh auto;
+}
+
+.position {
+    position: absolute;
+}
+
+.card {
+    display: inline-block;
+    width: calc(100% / 7);
+    height: calc(70vh / 5);
+    background-color: lightskyblue;
+    border: 3px red solid;
+}
+
+.header-nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.mic-video ul,
+section.interactions ul {
+    list-style-type: none;
+    color:whitesmoke
+}
+
+section.mic-video ul li,
+section.interactions ul li {
+    display: inline-block;
+}
