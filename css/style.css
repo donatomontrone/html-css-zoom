@@ -71,8 +71,8 @@ main.container {
 
 .card {
     position: relative;
-    width: calc(100% / 7);
-    height: calc(80vh / 5);
+    width: 200px;
+    height: 140px;
 }
 .header-nav {
     justify-content: space-between;
